@@ -351,7 +351,7 @@ def install():
     apt("nginx libjpeg-dev python-dev python-setuptools git-core "
         "postgresql libpq-dev memcached supervisor")
     sudo("easy_install pip")
-    sudo("pip install virtualenv mercurial")
+    sudo("pip install virtualenv")
 
 
 @task
@@ -375,7 +375,7 @@ def create():
             remove()
         run("virtualenv %s --distribute" % env.proj_name)
         vcs = "git" if env.git else "hg"
-        #run("%s clone %s %s" % (vcs, env.repo_url, env.proj_path))
+        run("%s clone %s %s" % (vcs, env.repo_url, env.proj_path))
 
     # Create DB and DB user.
     pw = db_pass()
@@ -413,7 +413,7 @@ def create():
         if env.reqs_path:
             pip("-r %s/%s" % (env.proj_path, env.reqs_path))
         pip("gunicorn setproctitle south psycopg2 "
-            "django-compressor python-memcached")
+            "django-compressor python-memcached pillow")
         manage("createdb --noinput --nodata")
         python("from django.conf import settings;"
                "from django.contrib.sites.models import Site;"
