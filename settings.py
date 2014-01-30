@@ -324,15 +324,15 @@ DEBUG_TOOLBAR_CONFIG = {"INTERCEPT_REDIRECTS": False}
 FABRIC = {
      "SSH_USER": "vagrant", # SSH username
      "SSH_PASS":  "vagrant", # SSH password (consider key-based authentication)
-     "SSH_KEY_PATH":  "", # Local path to SSH key file, for key-based auth
-     "HOSTS": ["192.168.124.12"], # List of hosts to deploy to
+     "SSH_KEY_PATH":  "/Users/olivierbufalini/.ssh/id_rsa.pub", # Local path to SSH key file, for key-based auth
+     "HOSTS": ["192.168.3.3"], # List of hosts to deploy to
      "VIRTUALENV_HOME":  "/home/vagrant", # Absolute remote path for virtualenvs
      "PROJECT_NAME": "mezzanine", # Unique identifier for project
      "REQUIREMENTS_PATH": "requirements.txt", # Path to pip requirements, relative to project
      "GUNICORN_PORT": 8000, # Port gunicorn will listen on
      "LOCALE": "en_US.UTF-8", # Should end with ".UTF-8"
-     "LIVE_HOSTNAME": "192.168.124.12", # Host for public site.
-     "REPO_URL": "", # Git or Mercurial remote repo URL for the project
+     "LIVE_HOSTNAME": "192.168.3.3", # Host for public site.
+     "REPO_URL": "git@github.com:olivierbufalini/Mezzanine-Vagrant.git", # Git or Mercurial remote repo URL for the project
      "DB_PASS": "password", # Live database password
      "ADMIN_PASS": "default", # Live admin user password
      "SECRET_KEY": SECRET_KEY,
