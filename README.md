@@ -30,9 +30,9 @@ Use Vagrant to boot the virtual machine and Fabric to install Mezzanine.
 
 ## 4. Access Mezzanine
 
-Point your browser to <http://192.168.3.3>.
+Point your browser to <http://192.168.3.4>.
 
-Log in to the admin interface <http://192.168.3.3/admin/> using the default account (username: `admin`, password: `default`).
+Log in to the admin interface <http://192.168.3.4/admin/> using the default account (username: `admin`, password: `default`).
 
 You can also ssh to 192.168.3.3 to access the virtual machine (username: `vagrant`, password: `vagrant`).
 
