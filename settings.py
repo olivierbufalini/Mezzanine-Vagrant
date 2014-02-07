@@ -103,7 +103,7 @@ ALLOWED_HOSTS = []
 # timezone as the operating system.
 # If running in a Windows environment this must be set to the same as your
 # system time zone.
-TIME_ZONE = None
+TIME_ZONE = "Europe/Paris"
 
 # If you set this to True, Django will use timezone-aware datetimes.
 USE_TZ = True
@@ -121,7 +121,7 @@ LANGUAGES = (
 # A boolean that turns on/off debug mode. When set to ``True``, stack traces
 # are displayed for error pages. Should always be set to ``False`` in
 # production. Best set to ``True`` in local_settings.py
-DEBUG = False
+DEBUG = True
 
 # Whether a user's session cookie expires when the Web browser is closed.
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
@@ -325,13 +325,13 @@ FABRIC = {
      "SSH_USER": "vagrant", # SSH username
      "SSH_PASS":  "vagrant", # SSH password (consider key-based authentication)
      "SSH_KEY_PATH":  "/Users/olivierbufalini/.ssh/id_rsa.pub", # Local path to SSH key file, for key-based auth
-     "HOSTS": ["192.168.3.3"], # List of hosts to deploy to
+     "HOSTS": ["192.168.3.4"], # List of hosts to deploy to
      "VIRTUALENV_HOME":  "/home/vagrant", # Absolute remote path for virtualenvs
      "PROJECT_NAME": "mezzanine", # Unique identifier for project
      "REQUIREMENTS_PATH": "requirements.txt", # Path to pip requirements, relative to project
      "GUNICORN_PORT": 8000, # Port gunicorn will listen on
      "LOCALE": "en_US.UTF-8", # Should end with ".UTF-8"
-     "LIVE_HOSTNAME": "192.168.3.3", # Host for public site.
+     "LIVE_HOSTNAME": "192.168.3.4", # Host for public site.
      "REPO_URL": "git@github.com:olivierbufalini/Mezzanine-Vagrant.git", # Git or Mercurial remote repo URL for the project
      "DB_PASS": "password", # Live database password
      "ADMIN_PASS": "default", # Live admin user password
