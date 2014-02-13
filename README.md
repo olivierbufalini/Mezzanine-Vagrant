@@ -9,8 +9,9 @@ Gunicorn as the WSGI server, Nginx as the front-web server with memcached, and S
 
  * [Vagrant](http://vagrantup.com) for managing VirtualBox-based virtual machines.
  * [Fabric](http://docs.fabfile.org) for automating the installation of Mezzanine.
+ * [Future].
 
- You can install fabric using pip.
+ You can install fabric & future using pip.
 
 
 ## 2. Download this repository
@@ -18,8 +19,11 @@ Gunicorn as the WSGI server, Nginx as the front-web server with memcached, and S
 If you haven't downloaded this repository yet, grab it from github:
 
     git clone https://github.com/olivierbufalini/Mezzanine-Vagrant
+    
+##  3. Put your SSH keys into the .ssh folder
 
-##  3. Boot the virtual machine and install Mezzanine
+
+##  4. Boot the virtual machine and install Mezzanine
 
 Use Vagrant to boot the virtual machine and Fabric to install Mezzanine.
 
@@ -28,7 +32,7 @@ Use Vagrant to boot the virtual machine and Fabric to install Mezzanine.
     fab all
 
 
-## 4. Access Mezzanine
+## 5. Access Mezzanine
 
 Point your browser to <http://192.168.3.4>.
 
@@ -37,7 +41,7 @@ Log in to the admin interface <http://192.168.3.4/admin/> using the default acco
 You can also ssh to 192.168.3.3 to access the virtual machine (username: `vagrant`, password: `vagrant`).
 
 
-## 5. Tear down your virtual machine
+## 6. Tear down your virtual machine
 
 When you're all done, bring down your virtual machine.
 
