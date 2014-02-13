@@ -9,7 +9,7 @@ Gunicorn as the WSGI server, Nginx as the front-web server with memcached, and S
 
  * [Vagrant](http://vagrantup.com) for managing VirtualBox-based virtual machines.
  * [Fabric](http://docs.fabfile.org) for automating the installation of Mezzanine.
- * [Future].
+ * Future.
 
  You can install fabric & future using pip.
 
